@@ -11,10 +11,15 @@ namespace Lognation.Domain.Entities
         [Key]
         public int Id { get; set; }
 
-        [Column("full_name")]
+        [Column("first_name")]
         [StringLength(100)]
         [Required]
-        public string FullName { get; set; }
+        public string FirstName { get; set; }
+
+        [Column("last_name")]
+        [StringLength(100)]
+        [Required]
+        public string LastName { get; set; }
 
         [Column("email")]
         [StringLength(100)]
@@ -24,7 +29,7 @@ namespace Lognation.Domain.Entities
         [Column("nickname")]
         [StringLength(50)]
         [Required]
-        public string Nickname { get; set; }
+        public string UserName { get; set; }
 
         [Column("password")]
         [StringLength(255)]
