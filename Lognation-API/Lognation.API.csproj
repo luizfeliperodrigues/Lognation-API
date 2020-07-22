@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Lognation_API</RootNamespace>
     <UserSecretsId>47264cae-de64-43ba-97cd-439c74a3a412</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
   </PropertyGroup>
@@ -17,6 +16,10 @@
     <ProjectReference Include="..\Lognation.Domain\Lognation.Domain.csproj" />
     <ProjectReference Include="..\Lognation.Infra.CrossCutting\Lognation.Infra.CrossCutting.csproj" />
     <ProjectReference Include="..\Lognation.Infra.Data\Lognation.Infra.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Installers\" />
   </ItemGroup>
 
 </Project>
